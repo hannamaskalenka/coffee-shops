@@ -1,0 +1,20 @@
+.container {
+  position: relative;
+}
+
+.h1 {
+  word-spacing: 5.5rem;
+  letter-spacing: 0.5px;
+  font-size: 5.5rem;
+  & span {
+    color: #367cff;
+    font-weight: 700;
+  }
+}
+
+.description {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  margin: 135px 0 0 30px;
+  text-align: center;
+}
