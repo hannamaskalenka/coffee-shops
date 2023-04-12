@@ -2,11 +2,19 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
-import Header from "@/components/Header";
+import Header from "@/shared/components/Header";
+import { Button } from "antd";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const router = useRouter();
+
+  const handleLoginClick = () => {
+    router.push("/login");
+  };
   return (
     <>
       <Head>
@@ -16,7 +24,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Header />
+        <Image src="/static/Thinking.svg" alt="" width={565} height={400} />
+        <p className={styles.heading}>Discover coffee shops around you!</p>
       </main>
     </>
   );

@@ -1,0 +1,13 @@
+.card {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 5px 15px 25px;
+
+  .title {
+    text-align: center;
+  }
+
+  &:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+}

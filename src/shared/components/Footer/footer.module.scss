@@ -1,0 +1,20 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  font-family: "Poppins Thin";
+  color: var(--text-color);
+
+  a {
+    font-family: "Poppins";
+    text-decoration: none;
+    margin-left: 5px;
+    color: var(--text-color);
+
+    &:visited {
+      color: var(--links-color);
+    }
+  }
+}
